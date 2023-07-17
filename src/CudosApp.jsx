@@ -1,11 +1,7 @@
-import SearchNavbar from './components/SearchNavbar';
-import { SideMenu } from './components/SideMenu';
+import { AppRouter } from './router/AppRouter';
 
 export const CudosApp = () => {
   return (
-    <div>
-      {/* <SearchNavbar /> */}
-      <SideMenu />
-    </div>
+    <AppRouter />
   )
 }

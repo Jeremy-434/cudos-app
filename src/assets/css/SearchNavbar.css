@@ -1,0 +1,51 @@
+.Header {
+    display: flex;
+    position: fixed;
+    z-index: 10;
+    width: calc(100% - 76px);
+    margin-left: 76px;
+    padding: 14px 16px;
+    justify-content: space-between;
+    align-items: center;
+    align-self: stretch;
+    border-bottom: 1px solid var(--slate-slate-200, #E2E8F0);
+    background: #FFF;
+  }
+  
+  .Space {
+    display: flex;
+    align-items: center;
+    align-self: stretch;
+    gap: 12px;
+  }
+  
+  .Button {
+    display: flex;
+    width: 35.895px;
+    height: 35.895px;
+    padding: 9px;
+    justify-content: center;
+    align-items: center;
+    border-radius: 100px;
+    border: 0.947px solid var(--slate-slate-200, #E2E8F0);
+    background: var(--neutral-1, #FFF);
+  }
+  
+  .Bars3BottomLeftIcon,
+  .BellIcon,
+  .QuestionMarkCircleIcon {
+      width:16px;
+      height:16px;
+      flex-shrink:0
+  }
+  
+  .Search {
+      display:flex;
+      width:264px;
+      align-items:center;
+      align-self:stretch;
+      border-radius:12px;
+      /* border:1px solid var(--slate-slate-200, #E2E8F0); */
+      background:var(--neutral-1, #FFF)
+  }
+  
