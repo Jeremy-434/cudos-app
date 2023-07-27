@@ -2,32 +2,91 @@
 
 .side-menu-row {
   display: grid;
-  /* position: fixed; */
+  position: absolute;
+  top: 0;
+  left: 0;
   grid-template-rows: repeat(9, minmax(0, 1fr));
-  width: 76px;
   padding: 0px 12px 12px 12px;
-  row-gap: 20px;
+  row-gap: 4px;
   flex-shrink: 0;
   align-self: stretch;
   z-index: 0;
-  border-right: 1px solid #E2E8F0;
-
+  border-right: 1px solid var(--slate-slate-200);
+  transition: all 0.5s ease;
 }
 
-.items-header-style {
-  display: grid;
-  place-items: center;
+.item {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
   padding: 16px;
   border-radius: 16px;
+  gap: 12px;
+  transition: all 0.5s ease;
 }
 
-.items-header-style:hover {
+.item:hover {
   cursor: pointer;
-  color: #3B82F6;
+  color: var(--blue-blue-500);
   background: #EFF6FF;
 }
 
 .icon-size {
   width: 20px;
   height: 20px;
+}
+
+.paragraph {
+  margin: 0px;
+  line-height: 1.5;
+  font-family: Lexend;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 22px;
+  letter-spacing: -0.42px;
+  transition: all 0.5s ease;
+}
+
+.menuTitleGroup {
+  display: flex;
+  place-items: center;
+  justify-content: flex-start;
+  align-items: center;
+  padding: 18px 10px 10px 10px;
+  border-radius: 16px;
+  gap: 12px;
+  color: var(--slate-slate-400);
+  font-family: Lexend;
+  font-size: 12px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 22px;
+  letter-spacing: -0.3px;
+  margin: 0px;
+  text-transform: uppercase;
+  transition: all 0.5s ease;
+}
+
+.cudosTextLogo {
+  display: flex;
+  place-items: center;
+  justify-content: flex-start;
+  align-items: center;
+  padding: 18px 10px 10px 10px;
+  border-radius: 16px;
+  gap: 12px;
+  transition: all 0.5s ease;
+}
+
+.colFooterSideMenu {
+  position: relative;
+  bottom: -100px;
+  left: 5px;
+}
+
+.footerSideMenu {
+  position: absolute;
+  bottom: 0;
+  left: 0;
 }

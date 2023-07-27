@@ -11,12 +11,19 @@
   },
   "dependencies": {
     "@ant-design/charts": "^1.4.2",
+    "@emotion/react": "^11.11.1",
+    "@emotion/styled": "^11.11.0",
+    "@fontsource/lexend": "^5.0.5",
     "@heroicons/react": "^2.0.18",
+    "@mui/icons-material": "^5.14.1",
+    "@mui/material": "^5.14.2",
+    "@mui/x-charts": "^6.0.0-alpha.4",
     "antd": "^5.7.0",
     "heroicons": "^2.0.18",
     "react": "^18.2.0",
     "react-dom": "^18.2.0",
-    "react-router-dom": "^6.14.1"
+    "react-router-dom": "^6.14.1",
+    "styled-components": "^6.0.4"
   },
   "devDependencies": {
     "@types/react": "^18.2.14",

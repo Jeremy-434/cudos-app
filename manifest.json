@@ -1,0 +1,25 @@
+{
+    "name": "cudos-app",
+    "short_name": "Cudos",
+    "start_url": "/",
+    "display": "standalone",
+    "background_color": "#ffffff",
+    "theme_color": "#000000",
+    "icons": [
+        {
+            "src": "/src/assets/img/cudos-logo.svg",
+            "sizes": "72x72",
+            "type": "image/png"
+        },
+        {
+            "src": "/src/assets/img/cudos-logo.svg",
+            "sizes": "96x96",
+            "type": "image/png"
+        },
+        {
+            "src": "/src/assets/img/cudos-logo.svg",
+            "sizes": "128x128",
+            "type": "image/png"
+        }
+    ]
+}

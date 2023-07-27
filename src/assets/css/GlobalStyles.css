@@ -1,0 +1,27 @@
+:root {
+    --neutral-1: #FFF;
+
+    --slate-slate-200: #E2E8F0;
+    --slate-slate-400: #94A3B8;
+    --slate-slate-600: #475569;
+    --slate-500: #64748B;
+    --slate-700: #334155;
+
+    --blue-blue-500: #3B82F6;
+    --orange-orange-400: #FB923C;
+    --cyan-cyan-400: #22D3EE;
+    --pink-pink-400: #F472B6;
+    --amber-amber-400: #FBBF24;
+    --indigo-indigo-400: #818CF8;
+    --character-secondary-45: rgba(0, 0, 0, 0.45);
+}
+
+body {
+    margin: 0;
+}
+
+.icon {
+    width: 16px;
+    height: 16px;
+    flex-shrink: 0;
+}

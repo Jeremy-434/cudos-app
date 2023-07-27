@@ -1,51 +1,61 @@
 .Header {
-    display: flex;
-    position: fixed;
-    z-index: 10;
-    width: calc(100% - 76px);
-    margin-left: 76px;
-    padding: 14px 16px;
-    justify-content: space-between;
-    align-items: center;
-    align-self: stretch;
-    border-bottom: 1px solid var(--slate-slate-200, #E2E8F0);
-    background: #FFF;
-  }
-  
-  .Space {
-    display: flex;
-    align-items: center;
-    align-self: stretch;
-    gap: 12px;
-  }
-  
-  .Button {
-    display: flex;
-    width: 35.895px;
-    height: 35.895px;
-    padding: 9px;
-    justify-content: center;
-    align-items: center;
-    border-radius: 100px;
-    border: 0.947px solid var(--slate-slate-200, #E2E8F0);
-    background: var(--neutral-1, #FFF);
-  }
-  
-  .Bars3BottomLeftIcon,
-  .BellIcon,
-  .QuestionMarkCircleIcon {
-      width:16px;
-      height:16px;
-      flex-shrink:0
-  }
-  
-  .Search {
-      display:flex;
-      width:264px;
-      align-items:center;
-      align-self:stretch;
-      border-radius:12px;
-      /* border:1px solid var(--slate-slate-200, #E2E8F0); */
-      background:var(--neutral-1, #FFF)
-  }
-  
+  display: flex;
+  position: fixed;
+  top: 0;
+  z-index: 10;
+  width: calc(100% - 195px);
+  margin-left: 195px;
+  padding: 14px 16px;
+  justify-content: space-between;
+  align-items: center;
+  align-self: stretch;
+  border-bottom: 1px solid var(--slate-slate-200);
+  background: #FFF;
+  transition: all 0.5s ease;
+}
+
+.Space {
+  display: flex;
+  align-items: center;
+  align-self: stretch;
+  gap: 12px;
+}
+
+.Button {
+  display: flex;
+  width: 32px;
+  height: 32px;
+  padding: 6px;
+  justify-content: center;
+  align-items: center;
+  border-radius: 100px;
+  border: 0.947px solid var(--slate-slate-200);
+  background: var(--neutral-1);
+}
+
+.Bars3BottomLeftIcon,
+.BellIcon,
+.QuestionMarkCircleIcon {
+  width: 16px;
+  height: 16px;
+  flex-shrink: 0
+}
+
+.Search {
+  display: flex;
+  width: 264px;
+  align-items: center;
+  align-self: stretch;
+  background: var(--neutral-1)
+}
+
+.Search .ant-input {
+  border: 1px solid #E2E8F0;
+  border-radius: 12px;
+}
+
+:where(.css-dev-only-do-not-override-1m62vyb).ant-input-search >.ant-input-group >.ant-input-group-addon:last-child .ant-input-search-button{
+  border: 1px solid #E2E8F0;
+  border-start-end-radius: 12px;
+  border-end-end-radius: 12px;
+}

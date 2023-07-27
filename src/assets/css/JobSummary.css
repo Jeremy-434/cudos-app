@@ -1,0 +1,24 @@
+.jobNumber {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 13.439px;
+    position: absolute;
+    top: 170px;
+    left: 95px;
+}
+
+.jobNumberFisrtText {
+    color: var(--slate-slate-600);
+    text-align: center;
+    font-family: Lexend;
+    font-size: 33.15px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 33.15px;
+    letter-spacing: -0.994px;
+}
+
+.pieChart{
+    width: 100px;
+}

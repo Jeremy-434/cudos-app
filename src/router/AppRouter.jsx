@@ -1,26 +1,22 @@
-import React from 'react';
 import { Route, Routes } from 'react-router-dom';
 import { SearchNavbar } from '../components';
 import { SideMenu } from '../components';
-import { DashBoard } from '../pages';
+import { DashBoardPage, LoginPage } from '../pages';
 import { ContainerLayout } from './layout/ContainerLayout';
-import { Layout, Space } from 'antd';
 import '.././assets/css/ContainerLayout.css'
-
-const { Header, Sider, Content, Footer } = Layout;
-
-
+import { GeneralProvider } from '../context/general/GeneralProvider';
 
 export const AppRouter = () => {
   return (
-    <div>
+    <GeneralProvider>
       <SearchNavbar />
       <SideMenu />
       <ContainerLayout>
         <Routes>
-          <Route path="/" element={<DashBoard />} />
+          <Route path="/" element={<DashBoardPage />} />
+          <Route path="/login" element={<LoginPage />} />
         </Routes>
       </ContainerLayout>
-    </div>
+    </GeneralProvider>
   )
 }
